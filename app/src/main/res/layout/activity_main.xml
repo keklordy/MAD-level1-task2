@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/columnTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/columnOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/column_one"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/valueOneColumnOne"
+        app:layout_constraintEnd_toStartOf="@+id/columnTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainText" />
+
+    <TextView
+        android:id="@+id/columnTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/column_two"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/valueOneColumnTwo"
+        app:layout_constraintEnd_toStartOf="@id/answerColumn"
+        app:layout_constraintStart_toEndOf="@id/columnOne"
+        app:layout_constraintTop_toBottomOf="@+id/mainText" />
+
+
+    <TextView
+        android:id="@+id/answerColumn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer_column"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/columnTwo"
+        app:layout_constraintTop_toBottomOf="@+id/mainText" />
+
+    <TextView
+        android:id="@+id/valueOneColumnOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value_true"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/valueTwoColumnOne"
+        app:layout_constraintEnd_toStartOf="@+id/columnTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/columnOne" />
+
+    <TextView
+        android:id="@+id/valueOneColumnTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value_true"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/valueTwoColumnTwo"
+        app:layout_constraintEnd_toStartOf="@id/answerColumn"
+        app:layout_constraintStart_toEndOf="@id/columnOne"
+        app:layout_constraintTop_toBottomOf="@+id/columnTwo" />
+
+    <EditText
+        android:id="@+id/answerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="5"
+        android:gravity="center"
+        android:hint="@string/answer_hint"
+        android:inputType="text"
+        android:digits="tfTF"
+        android:maxLength="1"
+        app:layout_constraintBottom_toTopOf="@+id/answerTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/columnTwo"
+        app:layout_constraintTop_toBottomOf="@+id/answerColumn" />
+
+    <TextView
+        android:id="@+id/valueTwoColumnOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value_true"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/valueThreeColumnOne"
+        app:layout_constraintEnd_toStartOf="@+id/columnTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valueOneColumnOne" />
+
+    <TextView
+        android:id="@+id/valueTwoColumnTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value_false"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/valueThreeColumnTwo"
+        app:layout_constraintEnd_toStartOf="@id/answerColumn"
+        app:layout_constraintStart_toEndOf="@id/columnOne"
+        app:layout_constraintTop_toBottomOf="@+id/valueOneColumnTwo" />
+
+    <EditText
+        android:id="@+id/answerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="5"
+        android:gravity="center"
+        android:hint="@string/answer_hint"
+        android:inputType="text"
+        android:digits="tfTF"
+        android:maxLength="1"
+        app:layout_constraintBottom_toTopOf="@+id/answerThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/columnTwo"
+        app:layout_constraintTop_toBottomOf="@+id/answerOne" />
+
+    <TextView
+        android:id="@+id/valueThreeColumnOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value_false"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/valueFourColumnOne"
+        app:layout_constraintEnd_toStartOf="@+id/columnTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valueTwoColumnOne" />
+
+    <TextView
+        android:id="@+id/valueThreeColumnTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value_true"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/valueFourColumnTwo"
+        app:layout_constraintEnd_toStartOf="@id/answerColumn"
+        app:layout_constraintStart_toEndOf="@id/columnOne"
+        app:layout_constraintTop_toBottomOf="@+id/valueTwoColumnTwo" />
+
+    <EditText
+        android:id="@+id/answerThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="5"
+        android:gravity="center"
+        android:hint="@string/answer_hint"
+        android:inputType="text"
+        android:digits="tfTF"
+        android:maxLength="1"
+        app:layout_constraintBottom_toTopOf="@+id/answerFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/columnTwo"
+        app:layout_constraintTop_toBottomOf="@+id/answerTwo" />
+
+    <TextView
+        android:id="@+id/valueFourColumnOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value_false"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton"
+        app:layout_constraintEnd_toStartOf="@+id/columnTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valueThreeColumnOne" />
+
+    <TextView
+        android:id="@+id/valueFourColumnTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value_false"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton"
+        app:layout_constraintEnd_toStartOf="@id/answerColumn"
+        app:layout_constraintStart_toEndOf="@id/columnOne"
+        app:layout_constraintTop_toBottomOf="@+id/valueThreeColumnTwo" />
+
+    <EditText
+        android:id="@+id/answerFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:digits="tfTF"
+        android:ems="5"
+        android:gravity="center"
+        android:hint="@string/answer_hint"
+        android:inputType="text"
+        android:maxLength="1"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/columnTwo"
+        app:layout_constraintTop_toBottomOf="@+id/answerThree" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valueFourColumnTwo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
